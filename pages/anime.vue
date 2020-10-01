@@ -4,13 +4,13 @@
 
     <div class="col-sm">
       <input v-model="textSearch" type="text" placeholder="ค้นหาการ์ตูน">
-      <b-button
+      <v-btn
         squared
         variant="outline-danger"
         @click="searchData()"
       >
         Search
-      </b-button>
+      </v-btn>
       <li
         v-for="data in animeData"
         :key="data.mal_id"

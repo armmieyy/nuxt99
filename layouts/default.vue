@@ -104,24 +104,9 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        },
-        {
           icon: 'mdi-account-check',
-          title: 'My Profile',
-          to: '/Profile'
-        },
-        {
-          icon: 'mdi-corn',
-          title: 'Shop',
-          to: '/Shop'
+          title: 'anime',
+          to: '/anime'
         }
       ],
       miniVariant: false,

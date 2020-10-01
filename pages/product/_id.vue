@@ -1,9 +1,19 @@
 <template>
-  <div>
-    <h1>สินค้าหมายเลข {{ this.$route.params.id }}</h1>
-    <h2>รายละเอียด</h2>
-    <h2>รูป</h2>
-    <h2>ราคา</h2>
+  <div style="text-align : center">
+    <a :href="$route.params.data.url">
+      <img
+        :src="this.$route.params.data.image_url"
+        alt=""
+      >
+    </a>
+    <h1>
+      {{ this.$route.params.data.title }}
+    </h1>
+    <h2>
+      {{ this.$route.params.data.synopsis }}
+    </h2>
+    <br>
+    <br>
   </div>
 </template>
 
