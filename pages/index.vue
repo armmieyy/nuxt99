@@ -1,16 +1,15 @@
 <template>
   <div class="row text-light">
     <div class="col-sm" />
-
     <div class="col-sm">
-      <input v-model="textSearch" type="text" placeholder="ค้นหาการ์ตูน">
-      <b-button
+      <input v-model="textSearch" type="text" placeholder="ค้นหาการ์ตูน" class="red--text">
+      <v-btn
         squared
         variant="outline-danger"
         @click="searchData()"
       >
         Search
-      </b-button>
+      </v-btn>
       <li
         v-for="data in animeData"
         :key="data.mal_id"
